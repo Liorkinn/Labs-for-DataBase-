@@ -44,11 +44,11 @@ namespace LabEgorychev
             var end = db.download(name, telephone, work, date, staj, information);
             if(end != -1)
             {
-                label1.Text = String.Format("Вставленный id: {0}", end);
+                label2.Text = String.Format("Успешно. Добавленный id: {0}", end);
             }
             else
             {
-                label1.Text = ("Ошибка.");
+                label2.Text = ("Ошибка добавления.");
             }
         }
 
